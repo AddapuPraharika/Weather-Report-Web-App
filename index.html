@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Weather Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather Forecast</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button onclick="getWeather()">Check Weather</button>
+    </div>
+    <div class="card" id="weatherCard">
+      <img id="weatherIcon" class="icon" />
+      <h2 id="cityName">City: --</h2>
+      <p><strong>Temp:</strong> <span id="temperature">--</span></p>
+      <p><strong>Condition:</strong> <span id="description">--</span></p>
+      <p><strong>Humidity:</strong> <span id="humidity">--</span></p>
+      <p><strong>Wind:</strong> <span id="wind">--</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
